@@ -1,0 +1,52 @@
+.nav
+  display flex
+  flex-flow row wrap
+  justify-content space-around
+  color red
+  font-weight 200
+html, body
+  width: 100%
+  height: 100%
+  padding: 0
+  margin: 0
+.container-1
+  display: grid
+  grid-template: 100%/ 100%
+  padding: 5%
+.container-2
+  display: grid
+  grid-template: 100%/ 50% 50%
+.container-3
+  display: grid
+  grid-template: 100%/ 33.33% 33.33% 33.33%
+.container-4
+  display: grid
+  grid-template: 100%/ 25% 25% 25% 25%
+.container-6
+  display: grid
+  grid-template: 100%/ 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%
+.col
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  grid-column-start: auto
+  min-height: 0.125rem
+  padding: 5%
+  overflow: hidden
+.center
+  text-align: center
+.last
+  grid-column-start: auto
+.align-items
+  align-items: end
+@media screen and (max-width: 780px)
+  .container-2
+    grid-template: 100%/ 100%
+  .container-3
+    grid-template: 50% 50%/ 50% 50%
+  .last
+    grid-area: 2/1/3/3
+  .container-4
+    grid-template: 100%/ 50% 50%
+  .container-6
+    grid-template: 100%/ 33.33% 33.33% 33.33%

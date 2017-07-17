@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Premier jouet",
+    "id": 1,
+    "price": "25"
+  },
+  {
+    "name": "Deuxième jouet",
+    "id": 2,
+    "price": "55"
+  }
+]
